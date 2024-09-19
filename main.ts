@@ -6,11 +6,12 @@
 */
 
 basic.clearScreen()
+basic.showIcon(IconNames.Happy)
 
 let currentTemperature = input.temperature()
 
 input.onButtonPressed(Button.A, function () {
-    basic.showString("The current temperature is: " + currentTemperature)
+    basic.showString("The temperature is: " + currentTemperature)
 })
-
+basic.clearScreen()
 
